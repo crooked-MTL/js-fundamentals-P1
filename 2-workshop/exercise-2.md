@@ -54,6 +54,15 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 ```
 // Your solution here!
 
+let sentence = 'Hello world!';
+
+if (sentence.includes('Hello')) {
+    console.log('Sentence DOES contain the word "Hello"');
+} else {
+    console.log('Sentence DOES NOT contain the word "Hello"');
+}
+
+
 ```
 
 ## Question 2: Get the specified item in the nested array
@@ -66,6 +75,12 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
 ```
 // Your solution here!
+
+const array = [[1, [2, 3]]];
+const first = 0;
+const second = 1;
+const third = 0;
+console.log(array[first][second][third])
 
 ```
 
@@ -80,6 +95,14 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
 ```
 // Your solution here!
+
+let currentNum = 10;
+let min = 5;
+
+while (currentNum > min) {
+    currentNum = currentNum - 1;
+    console.log(currentNum);
+}
 
 ```
 
@@ -96,6 +119,15 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 ```
 // Your solution here!
 
+const encodedMessage = 'gnidliub gruobuaF eht rednu deirub si erusaert ehT';
+const letterArray = encodedMessage.split('');
+const reversedArray = letterArray.reverse();
+const reversedString = reversedArray.join('');
+
+
+if (reversedString.includes('treasure')) {
+    console.log('Your message:', reversedString)
+}
 ```
 
 ## Question 5: Add all the numbers from 10 to 0
@@ -111,6 +143,14 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 ```
 // Your solution here!
 
+let total = 0;
+let count = 10;
+
+while (count > 0) {
+    total = total + count;
+    count = count - 1;
+    console.log('The total is:', total)
+}
 ```
 
 ## Question 6: Check if the array includes a specific number
@@ -128,4 +168,13 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 ```
 // Your solution here!
 
+let array = [1, 3, 7, 4, 5, 2, 1];
+
+for (let i = 0; i < array.length; i++) {
+  let item = array[i];
+  let numberToSearchFor = 5;
+    if (item === numberToSearchFor) {
+console.log('Array includes the number!')
+}
+}
 ```

@@ -15,6 +15,17 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  const even = `#_#_#_#_`;
+  const odd = `_#_#_#_#`;
+
+  for (let i = 0; i <= 7; i++) {
+    if (i % 2 === 0) {
+      console.log(even);
+    } else {
+      console.log(odd);
+    }
+  }
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

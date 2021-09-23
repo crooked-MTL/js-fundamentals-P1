@@ -15,15 +15,33 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
-  // -----------------------------------------------------------------
-  // Write code between the lines (above)
-  //
-  //
-  //
-  //
-  //
-  //
+
+  const low = 1;
+  const high = 200;
+
+  for (let i = low; i <= high; i++) {
+    let flag = 0;
+
+    for (let a = 2; a < i; a++) {
+      if (i % a == 0) {
+        flag = 1;
+        break;
+      }
+    }
+
+    if (i > 1 && flag == 0) {
+      console.log(i);
+    }
+  }
 }
+// ----------------------------------------------------
+// Write code between the lines (above)
+//
+//
+//
+//
+//
+//
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-12

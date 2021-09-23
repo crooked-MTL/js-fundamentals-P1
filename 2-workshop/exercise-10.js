@@ -13,6 +13,12 @@ function exercise10() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+
+  let result = "#";
+  while (result.length <= 7) {
+    console.log(result);
+    result = result + "#";
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
